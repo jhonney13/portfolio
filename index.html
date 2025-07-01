@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Vipul Singh Parmar</h1>
+
+          <p class="title">Data Scientist</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:vipulsingh44519@gmail.com" class="contact-link">vipulsingh44519@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 8707721548" class="contact-link">+91 8707721548</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">May 13, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Jhansi, Uttar Pradesh, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/your-linkedin-username" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/ORG_XENO" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/vipul_s.parmar/?hl=en" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/jhonney13" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Vipul Singh Parmar, a data science enthusiast and aspiring machine learning engineer currently pursuing 
+            a Master of Computer Applications at Bundelkhand University, Jhansi.
+          </p>
+
+          <p>
+            With a strong foundation in mathematics, programming, and applied AI, I specialize in building intelligent
+            systems that make sense of complex real-world problems — particularly in the fields of healthcare, embedded
+            technology, and predictive analytics.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+        
+          <ul class="service-list">
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/machine-learning.svg" alt="ML icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning Development</h4>
+                <p class="service-item-text">
+                  Building intelligent models and deploying explainable ML apps using Python, Scikit-learn, SHAP, and Streamlit for real-world healthcare and business solutions.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="App icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science & Analytics</h4>
+                <p class="service-item-text">
+                  End-to-end data science workflows — from data cleaning and visualization to modeling and statistical inference for impactful decision-making.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/microchip-svgrepo-com.svg" alt="firmware icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Firmware & Embedded Systems</h4>
+                <p class="service-item-text">
+                  Developing embedded firmware for gaming peripherals and IoT devices using QMK and Nordic nRF52840, merging performance with innovation.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/healthcare-svgrepo-com.svg" alt="health AI icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Healthcare AI Solutions</h4>
+                <p class="service-item-text">
+                  Designing predictive apps for heart disease, ICU demand, and pediatric risk using ML, helping clinicians with smarter, faster decision-making.
+                </p>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+        
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+        
+          <ul class="testimonials-list has-scrollbar">
+        
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+        
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Amit Patel" width="60" data-testimonials-avatar>
+                </figure>
+        
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Amit Patel</h4>
+        
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Vipul is a true team player—always ready to help and share knowledge. His positive attitude and dedication make working with him a pleasure.
+                  </p>
+                </div>
+        
+              </div>
+            </li>
+        
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+        
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Neha Singh" width="60" data-testimonials-avatar>
+                </figure>
+        
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Neha Singh</h4>
+        
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I appreciate Vipul's attention to detail and his ability to communicate complex ideas clearly. He brings out the best in every team he joins.
+                  </p>
+                </div>
+        
+              </div>
+            </li>
+        
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+        
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Rohit Sharma" width="60" data-testimonials-avatar>
+                </figure>
+        
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rohit Sharma</h4>
+        
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Vipul's enthusiasm for learning and growth is inspiring. He is always eager to take on new challenges and encourages others to do the same.
+                  </p>
+                </div>
+        
+              </div>
+            </li>
+        
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+        
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Priya Nair" width="60" data-testimonials-avatar>
+                </figure>
+        
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Priya Nair</h4>
+        
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working with Vipul is always a positive experience. He is reliable, creative, and brings a thoughtful perspective to every discussion.
+                  </p>
+                </div>
+        
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Amit Patel" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Amit Patel</h4>
+              <time datetime="2025-03-12">12 March, 2025</time>
+              <div data-modal-text>
+                <p>Vipul is a true team player—always ready to help and share knowledge. His positive attitude and dedication make working with him a pleasure.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-2.png" alt="Neha Singh" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Neha Singh</h4>
+              <time datetime="2025-04-27">27 April, 2025</time>
+              <div data-modal-text>
+                <p>I appreciate Vipul's attention to detail and his ability to communicate complex ideas clearly. He brings out the best in every team he joins.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-4.png" alt="Rohit Sharma" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Rohit Sharma</h4>
+              <time datetime="2025-05-09">9 May, 2025</time>
+              <div data-modal-text>
+                <p>Vipul's enthusiasm for learning and growth is inspiring. He is always eager to take on new challenges and encourages others to do the same.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-3.png" alt="Priya Nair" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Priya Nair</h4>
+              <time datetime="2025-06-14">14 June, 2025</time>
+              <div data-modal-text>
+                <p>Working with Vipul is always a positive experience. He is reliable, creative, and brings a thoughtful perspective to every discussion.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+      
+        <!-- Education Section -->
+        <section class="timeline">
+      
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+      
+          <ol class="timeline-list">
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bundelkhand University, Jhansi — Master of Computer Applications</h4>
+              <span>Sep 2024 — Aug 2026</span>
+              <p class="timeline-text">
+                Relevant Coursework: AI/ML, Data Science Stats, Big Data Analytics, Probability, Discrete Mathematics
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bundelkhand University, Jhansi — Bachelor of Science in Mathematics</h4>
+              <span>Sep 2021 — Aug 2024</span>
+              <p class="timeline-text">
+                Relevant Coursework: Calculus, Linear Algebra, Abstract Algebra, Real Analysis, Probability and Statistics, Mathematical Methods<br>
+                SGPA: 7.13
+              </p>
+            </li>
+      
+          </ol>
+      
+        </section>
+      
+        <!-- Experience Section -->
+        <section class="timeline">
+      
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+      
+          <ol class="timeline-list">
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Department Of Science & Technology, New Delhi — Research Fellow (Hardware Development/Data Analysis)</h4>
+              <span>Dec 2024 - May 2025</span>
+              <p class="timeline-text">
+                • Led data collection from gamers to identify key challenges, analyzing trends and providing actionable insights to inform hardware and firmware development.<br>
+                • Led the design and development of an innovative mechanical keyboard with QMK firmware, integrating customizable user programming.<br>
+                • Secured and managed a ₹50,000 grant from DST-TEC, managing project budgets and compliance.
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Nimbus Innovations, Jhansi — Junior Firmware Developer Intern</h4>
+              <span>June 2024 - Dec 2024</span>
+              <p class="timeline-text">
+                • Led the design and development of high-performance gaming mice and custom keyboards for the Indian market.<br>
+                • Developed firmware for gaming peripherals using QMK and Nordic nRF52840.<br>
+                • Achieved 3rd place in the Sagar Hackathon during the Investor Summit, recognized by the CM of Madhya Pradesh.
+              </p>
+            </li>
+      
+          </ol>
+      
+        </section>
+      
+        <!-- Skills Section -->
+        <section class="skill">
+      
+          <h3 class="h3 skills-title">Skills</h3>
+      
+          <ul class="skills-list content-card">
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages</h5>
+                <data value="90">Python, MySQL, Rust, Embedded C, HTML, CSS</data>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Deep Learning & Machine Learning</h5>
+                <data value="85">PyTorch, Transformers, CNNs, Scikit-learn, Keras</data>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Big Data & Databases</h5>
+                <data value="80">DBMS, Spark, Hadoop, MongoDB, Python (scikit-learn, numpy, pandas, matplotlib)</data>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Science & Miscellaneous</h5>
+                <data value="80">A/B testing, ETL, Data pipeline, Statistics, Time series, Experimental design, Hypothesis testing, OOP, OOD, APIs, Excel, Git, Power BI, PowerPoint, Word, VBA, Power Query</data>
+              </div>
+            </li>
+      
+          </ul>
+      
+        </section>
+        
+        
+        
+        <!-- Publications Section -->
+        <section class="projects">
+          <h3 class="h3 skills-title">Publications</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Enhancing Preventative Cardiology Through Machine Learning - Under Review</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <span>arXiv:2505.XXXXX [cs.LG], May 2025 (In preparation for submission)</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        
+        <!-- Awards & Achievements Section -->
+        <section class="projects">
+          <h3 class="h3 skills-title">Awards & Achievements</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Bundelkhand Hackathon (MP Global Investment Summit) – 3rd Place</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <span>Recognized by the Chief Minister of Madhya Pradesh for innovation in gaming technology</span>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Bundelkhand University Tech Hackathon – Winner</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <span>Developed a cutting-edge tech solution that impressed the jury</span>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">RISE & YIC Hackathon – Winner</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <span>Acknowledged for technical expertise and innovative problem-solving</span>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Selected as a Young & Student Entrepreneur – Jagriti Jagran 2025</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <span>Recognized by Dainik Jagran as one of the top young and student entrepreneurs across India in the Jagriti Jagran initiative, highlighting innovation, leadership, and entrepreneurial impact.<br>
+                <a href="https://janhitjagran.in/students-youngentrepreneur" target="_blank">Read more</a></span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      
+      </article>
+      
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>All</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="all">
+              <a href="https://github.com/jhonney13/shap-patient-outcome-explainer" target="_blank">
+                <h3 class="project-title">SHAP Patient Outcome Explainer</h3>
+                <p class="project-category">Patient Outcome Prediction Using EHR Data - SHAP Explainer App</p>
+                <p class="project-description">
+                  Streamlit app to interpret ML predictions on EHR data using SHAP. Select patients, visualize SHAP explanations, and see feature contributions for transparent healthcare AI.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="all">
+              <a href="https://github.com/jhonney13/icu-bed-forecast-app" target="_blank">
+                <h3 class="project-title">ICU Bed Forecast App</h3>
+                <p class="project-category">ICU Bed Occupancy Forecasting App</p>
+                <p class="project-description">
+                  Forecast ICU bed usage with Streamlit and Prophet. Upload data, visualize trends, predict demand, and download results. Designed for hospital resource planning.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="all">
+              <a href="https://github.com/jhonney13/pediatric-risk-predictor" target="_blank">
+                <h3 class="project-title">Pediatric Risk Predictor</h3>
+                <p class="project-category">HRV Anomaly Detection & Post-Surgery Risk</p>
+                <p class="project-description">
+                  Detects heart rate anomalies and predicts post-surgery risk in pediatric patients. Interactive Streamlit app for clinicians and researchers, with visualizations and recommendations.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="all">
+              <a href="https://github.com/jhonney13/Web-App-Heart-Disease-Detection-in-Python-Machine-Learning-Project" target="_blank">
+                <h3 class="project-title">Heart Disease Prediction App</h3>
+                <p class="project-category">Web App for Heart Disease Detection</p>
+                <p class="project-description">
+                  Predicts heart disease risk from medical data using a trained ML model. Flask web app with real-time prediction, user-friendly form, and high accuracy (98.5%).
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="all">
+              <a href="https://github.com/NIMBUS-GAMING/N-HUB-GUI-v1" target="_blank">
+                <h3 class="project-title">N Hub - Nimbus Keyboard Configurator</h3>
+                <p class="project-category">Windows configuration tool for Nimbus custom keyboard</p>
+                <p class="project-description">
+                  A modern and powerful keyboard configuration utility featuring a sleek, customizable interface with a distinctive red accent theme. N Hub provides comprehensive tools for keyboard customization, testing, and configuration.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="all">
+              <a href="https://github.com/jhonney13/build-your-keyboard" target="_blank">
+                <h3 class="project-title">build-your-keyboard</h3>
+                <p class="project-category">React-based Keyboard Configurator</p>
+                <p class="project-description">
+                  A keyboard configurator that allows users to customize their keyboard by selecting different components and seeing a live preview. Features interactive customization, real-time price calculation, and a beautiful responsive UI built with TailwindCSS.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="all">
+              <a href="https://github.com/jhonney13/valentine-lyrics-surprise" target="_blank">
+                <h3 class="project-title">Valentine Project</h3>
+                <p class="project-category">Python Lyrics & Music Surprise</p>
+                <p class="project-description">
+                  A Python script that plays a song and displays synchronized lyrics on the console. Designed as a Valentine's Day gift to express love through music and words. Perfect for karaoke-style presentations, surprises, or creative gifts.
+                </p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114476.05086125985!2d78.52046951646283!3d25.44842502999786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397776f824d5f89f%3A0x3c174cf84f9e56d7!2sJhansi%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1653901524719!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form id="contact-form" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- EmailJS SDK and initialization -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init({
+      publicKey: "xQ4mDWe-rZZO8Vs_E"
+    });
+  </script>
+
+</body>
+
+</html>
